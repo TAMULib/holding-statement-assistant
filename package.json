@@ -21,7 +21,7 @@
   "targets": {
     "renderer": {
       "distDir": "dist",
-      "entryPoints": "src/index.html"
+      "source": "src/index.html"
     }
   }
 }
