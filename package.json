@@ -4,6 +4,12 @@
   "description": "My first Electron application",
   "main": "src/main.js",
   "scripts": {
+  "targets": {
+  "main": {
+  "distDir": "dist",
+  "entryPoints": "src/index.html"
+  }
+  },
     "start": "parcel src/index.html --public-url ./",
     "build": "parcel build src/index.html"
   },
