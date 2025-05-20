@@ -14,7 +14,7 @@ function createWindow() {
   });
 
   // Load the index.html of the app.
-  mainWindow.loadFile(path.join(__dirname, '..', 'dist', 'index.html')); // Load index.html from the dist directory
+  mainWindow.loadFile(path.join(__dirname, '..', 'dist', 'index.html'));
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools();
