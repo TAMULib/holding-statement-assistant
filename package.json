@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "My first Electron application",
   "scripts": {
-    "start": "parcel src/index.html --public-url ./",
+    "start": "parcel build src/index.html && electron .",
     "build": "parcel build src/index.html"
   },
   "devDependencies": {
