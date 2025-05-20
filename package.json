@@ -2,11 +2,14 @@
   "name": "my-electron-app",
   "version": "1.0.0",
   "description": "My first Electron application",
-  "main": "main.js",
+  "main": "src/main.js",
   "scripts": {
     "start": "electron ."
   },
   "devDependencies": {
     "electron": "^28.3.3"
+  },
+  "dependencies": {
+    "marcjs": "^3.0.2"
   }
 }
