@@ -1,5 +1,5 @@
 import React from 'react';
 
-function App() {
+export default function App() {
   return <div>Hello, Electron with React!</div>;
 }
