@@ -1,20 +1,24 @@
 {
-  "name": "my-electron-app",
+  "name": "holding-statement-assistant",
   "version": "1.0.0",
-  "description": "My first Electron application",
+  "main": "main.js",
   "scripts": {
-    "start": "parcel build src/index.html && electron .",
-    "build": "parcel build src/index.html"
+    "start": "electron .",
+    "react-start": "vite",
+    "electron-dev": "concurrently \"vite\" \"wait-on http://localhost:5173 && electron .\""
   },
   "devDependencies": {
-    "@parcel/transformer-js": "^2.15.1",
-    "@parcel/transformer-react-refresh-wrap": "^2.15.1",
-    "electron": "^28.3.3",
-    "parcel": "^2.15.1"
+    "electron": "^28.0.0",
+    "vite": "^5.0.0",
+    "concurrently": "^8.0.0",
+    "wait-on": "^7.0.1"
   },
   "dependencies": {
     "marcjs": "^3.0.2",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  }
+ ,"babel": {
+    "presets": ["@babel/preset-react"]
+  }
 }
