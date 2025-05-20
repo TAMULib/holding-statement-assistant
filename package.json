@@ -2,7 +2,6 @@
   "name": "my-electron-app",
   "version": "1.0.0",
   "description": "My first Electron application",
-  "main": "src/main.js",
   "scripts": {
     "start": "parcel build src/index.html && electron .",
     "build": "parcel build src/index.html"
