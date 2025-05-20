@@ -4,10 +4,12 @@
   "description": "My first Electron application",
   "main": "src/main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "parcel src/index.html --public-url ./",
+    "build": "parcel build src/index.html"
   },
   "devDependencies": {
-    "electron": "^28.3.3"
+    "electron": "^28.3.3",
+    "parcel": "^2.15.1"
   },
   "dependencies": {
     "marcjs": "^3.0.2"
