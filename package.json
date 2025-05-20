@@ -2,6 +2,7 @@
   "name": "my-electron-app",
   "version": "1.0.0",
   "description": "My first Electron application",
+  "main": "src/main.js",
   "scripts": {
     "start": "parcel build src/index.html && electron .",
     "build": "parcel build src/index.html"
@@ -16,5 +17,11 @@
     "marcjs": "^3.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "targets": {
+    "renderer": {
+      "distDir": "dist",
+      "entryPoints": "src/index.html"
+    }
   }
 }
