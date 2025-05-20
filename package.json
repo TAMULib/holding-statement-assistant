@@ -5,7 +5,7 @@
   "scripts": {
     "start": "electron .",
     "react-start": "vite",
-    "electron-dev": "concurrently \"vite\" \"wait-on http://localhost:5173 && electron .\""
+    "electron-dev": "concurrently \"vite --host\" \"wait-on http://localhost:5173 && electron .\""
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.4.1",
